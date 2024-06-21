@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="atomic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="bem.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Phần sidebar trái -->
+        <aside id="sidebar">
+            <div class="sidebar__logo">
+                <a href=""><img src="assets/OpenDAX.png" class="sidebar__logo-image" alt="s"></a>
+            </div>
+            <div class="sidebar__nav-item">
+                <ul>
+                    <li>
+                        <a href="" class="sidebar__nav__link">
+                            <img src="assets/trade.svg" class="sidebar__nav__icon">
+                            <span class="sidebar__nav__title">Trade</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="sidebar__nav__link sidebar__nav__link--active">
+                            <img src="assets/Orders.svg" class="sidebar__nav__icon">
+                            <span class="sidebar__nav__title">Orders</span>
+                        </a>
+                        <ul class="sidebar__nav__sublist">
+                            <li>
+                                <a href=""
+                                    class="sidebar__nav__sublist__link sidebar__nav__sublist__link--active">All</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar__nav__sublist__link">Open</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="sidebar__nav__link">
+                            <img src="assets/History.svg" class="sidebar__nav__icon">
+                            <span class="sidebar__nav__title">History</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="sidebar__nav__link">
+                            <img src="assets/settings.svg" class="sidebar__nav__icon">
+                            <span class="sidebar__nav__title">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__gfi">
+                <div class="sidebar__gfi__header">
+                    <div class="sidebar__gfi__header__avata">
+                        <img src="assets/ava.png" alt="avata">
+                    </div>
+                    <div class="sidebar__gfi__header__wallet">
+                        <span class="sidebar__gfi__header__wallet--surplus">0.000244 ETH</span>
+                        <span class="sidebar__gfi__header__wallet--title">0xGD63...6DS9</span>
+                    </div>
+                </div>
+                <div class="sidebar__gfi__action">
+                    <button class="sidebar__gfi__action_btn btn btn--default">Deposit</button>
+                    <button class="sidebar__gfi__action_btn btn btn--violet">Withdraw</button>
+                </div>
+                <div class="sidebar__gfi__collapse">
+                    <div class="sidebar__gfi__collapse__active">
+                        <img src="assets/colap.svg" class="sidebar__gfi__collapse__active__icon">
+                        <span class="sidebar__gfi__collapse__active__title">Collapse</span>
+                    </div>
+                    <img src="assets/collapout.png" class="sidebar__gfi__collapse__out">
+                </div>
+            </div>
+        </aside>
+        <!-- kết thúc sidebar trái -->
+
+        <!-- Phần main -->
+        <main id="main">
+            <div class="main__tab">
+                <button class="main__tab_btn main__tab_btn--active">All</button>
+                <button class="main__tab_btn">Open</button>
+            </div>
+
+            <table class="main__tableContent">
+                <thead class="main__tableContent__thead">
+                    <tr>
+                        <th>DATE</th>
+                        <th>MARKET</th>
+                        <th>SIDE</th>
+                        <th>PRICE</th>
+                        <th>AMOUNT</th>
+                        <th>VALUE</th>
+                        <th>FILLED</th>
+                        <th>STATUS</th>
+                        <th>CANCEL</th>
+                        <th>ALL</th>
+                    </tr>
+                </thead>
+                <tbody class="main__tableContent__tbody">
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="success">Buy</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>0%</th>
+                        <th>
+                            <p class="status status--success">Open</p>
+                        </th>
+                        <th class="danger">CANCEL</th>
+                        <th class="danger"><i class="fa-solid fa-x"></i></th>
+                    </tr>
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="success">Buy</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>0%</th>
+                        <th>
+                            <p class="status status--success">Open</p>
+                        </th>
+                        <th class="danger">CANCEL</th>
+                        <th class="danger"><i class="fa-solid fa-x"></i></th>
+                    </tr>
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="success">Buy</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>0%</th>
+                        <th>
+                            <p class="status status--success">Open</p>
+                        </th>
+                        <th class="danger">CANCEL</th>
+                        <th class="danger"><i class="fa-solid fa-x"></i></th>
+                    </tr>
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="success">Buy</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>100%</th>
+                        <th>
+                            <p class="status status--filled">Filled</p>
+                        </th>
+                        <th class=></th>
+                        <th class=></th>
+                    </tr>
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="danger">Sell</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>0%</th>
+                        <th>
+                            <p class="status status--canceled">Canceled</p>
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="danger">Sell</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>0%</th>
+                        <th>
+                            <p class="status status--success">Open</p>
+                        </th>
+                        <th class="danger">CANCEL</th>
+                        <th class="danger"><i class="fa-solid fa-x"></i></th>
+                    </tr>
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="danger">Sell</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>0%</th>
+                        <th>
+                            <p class="status status--canceled">Canceled</p>
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="danger">Sell</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>0%</th>
+                        <th>
+                            <p class="status status--success">Open</p>
+                        </th>
+                        <th class="danger">CANCEL</th>
+                        <th class="danger"><i class="fa-solid fa-x"></i></th>
+                    </tr>
+                    <tr>
+                        <th>18-06-2017 12:38:42</th>
+                        <th>ETH/USDT</th>
+                        <th class="danger">Sell</th>
+                        <th>3582.18</th>
+                        <th>4030.40</th>
+                        <th>4030.40</th>
+                        <th>0%</th>
+                        <th>
+                            <p class="status status--canceled">Canceled</p>
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tbody>
+                <tfoot class="main__tableContent__tfoot">
+                    <tr>
+                        <td colspan="10">
+                            <div class="pagination">
+                                <span class="pagination__info">Showing 1 to 10 of 97 results</span>
+                                <div class="pagination__control">
+                                    <button class="pagination__btn"><i class="fa-solid fa-angle-left"></i></button>
+                                    <button class="pagination__btn pagination__btn--active">1</button>
+                                    <button class="pagination__btn">2</button>
+                                    <button class="pagination__btn">3</button>
+                                    <button class="pagination__btn">...</button>
+                                    <button class="pagination__btn">8</button>
+                                    <button class="pagination__btn">9</button>
+                                    <button class="pagination__btn">10</button>
+                                    <button class="pagination__btn"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </main>
+    </div>
+</body>
+
+</html>
